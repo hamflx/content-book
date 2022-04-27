@@ -1,0 +1,6 @@
+[book]
+authors = ["hamflx"]
+language = "zh-cmn-Hans"
+multilingual = false
+src = "src"
+title = "hamflx's blog"
