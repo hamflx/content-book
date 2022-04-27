@@ -4,3 +4,6 @@ language = "zh-cmn-Hans"
 multilingual = false
 src = "src"
 title = "hamflx's blog"
+
+[output.html]
+additional-css = ["css/custom.css"]

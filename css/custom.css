@@ -1,0 +1,25 @@
+:root {
+  --primary-color: rgb(234, 0, 94);
+  --secondary-color: rgb(255, 122, 175);
+}
+
+.light {
+  --sidebar-active: var(--primary-color);
+  --links: var(--secondary-color);
+}
+
+::selection {
+  background: var(--primary-color);
+  color:#fff;
+}
+
+.icp {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.icp-link,
+.icp-link:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
