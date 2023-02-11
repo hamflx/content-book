@@ -12,3 +12,4 @@
 - [增强 Vue 项目的智能感知](./posts/2020/11/13/vsc-vue-intelli-sense.md)
 - [vuedraggable 使用问题记录](./posts/2020/11/13/vuedraggable-usage.md)
 - [玩饥荒联机版日志](./posts/2019/3/22/dst-server.md)
+- [Chrome 时代的浏览器兼容性测试](./posts/2023/2/11/fetch-browser.md)
