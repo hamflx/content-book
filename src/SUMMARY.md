@@ -4,6 +4,7 @@
 
 # 文章清单
 
+- [静态链接 C# 到 Rust](./posts/2023/2/28/call-net-from-rust-statically.md)
 - [使用 Rust 编写转发 DLL](./posts/2022/4/26/forward-dll.md)
 - [vite 兼容性踩坑记录](./posts/2021/11/23/vite-compatibility.md)
 - [前端通过 ffmpeg 库播放视频](./posts/2021/10/14/fe-ffmpeg.md)
