@@ -1,6 +1,6 @@
 # Summary
 
-[简介](README.md)
+[个人学习分享](README.md)
 
 # 文章清单
 
