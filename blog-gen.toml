@@ -1,0 +1,31 @@
+# 博客生成器配置文件
+
+[site]
+# 站点标题，显示在页面顶部和浏览器标签页
+title = "hamflx"
+
+# 站点描述，显示在首页
+description = ""
+
+# 页脚版权信息
+footer = "© 2025 hamflx. Generated with blog-gen."
+
+[paths]
+# 内容目录
+content = "src"
+
+# 输出目录
+output = "public"
+
+# 文章输出子目录
+posts = "posts"
+
+[ai]
+# 是否启用 AI 摘要生成
+enable_summary = true
+
+# 是否启用 AI 关键字提取
+enable_keywords = true
+
+# AI 模型
+model = "doubao-1-5-lite-32k-250115"
