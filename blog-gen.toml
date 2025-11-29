@@ -12,7 +12,7 @@ footer = "© 2025 hamflx. Generated with blog-gen."
 
 [paths]
 # 内容目录
-content = "src"
+content = "src/posts"
 
 # 输出目录
 output = "public"
