@@ -10,6 +10,8 @@ description = ""
 # 页脚版权信息
 footer = "© 2025 hamflx. Generated with blog-gen."
 
+googleAnalyticsId = "G-7KW3T6P3VZ"
+
 [paths]
 # 内容目录
 content = "src/posts"
