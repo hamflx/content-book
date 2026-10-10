@@ -1,6 +1,9 @@
 # 博客生成器配置文件
 
 [site]
+# 正式站点地址，用于 canonical、站点地图和 robots.txt
+url = "https://hamflx.dev/"
+
 # 站点标题，显示在页面顶部和浏览器标签页
 title = "hamflx"
 

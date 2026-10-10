@@ -23,7 +23,7 @@ const layout = await readFile(path.join(generatorDir, 'src/templates/layout.html
 const render = Handlebars.compile(layout);
 const navPattern = /<nav\b[^>]*>[\s\S]*?<\/nav>/g;
 const cssPattern = /        header nav \{[\s\S]*?(?=        \.content \{)/g;
-const homePattern = /<a href="([^"]*index\.html)">Home<\/a>/;
+const homePattern = /<a href="([^"]+)">Home<\/a>/;
 const outputDir = path.resolve(config.paths.output);
 
 async function htmlFiles(dir) {
@@ -53,8 +53,8 @@ for (const file of files) {
   const homeHref = oldNav.match(homePattern)?.[1];
   assert(homeHref, 'Existing Home link is missing');
   const expectedHome = path.relative(path.dirname(file), path.join(outputDir, 'index.html')).replaceAll('\\', '/');
-  assert.equal(homeHref, expectedHome, 'Existing Home link must point to the site index');
-  const rendered = render({ navigation, rootPath: homeHref.slice(0, -'index.html'.length) });
+  assert(homeHref === '/' || homeHref === expectedHome, 'Existing Home link must point to the site index');
+  const rendered = render({ navigation, homeUrl: homeHref, rootPath: expectedHome.slice(0, -'index.html'.length) });
   const newNav = singleMatch(rendered, navPattern, 'rendered navigation');
   const newCss = singleMatch(rendered, cssPattern, 'rendered navigation stylesheet');
   const updated = original.replace(oldNav, () => newNav).replace(oldCss, () => newCss);
