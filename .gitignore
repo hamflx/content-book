@@ -1,2 +1,7 @@
 book
 /public
+.env
+.env.*
+!.env.example
+/.wrangler
+/output

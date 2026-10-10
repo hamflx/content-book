@@ -12,6 +12,22 @@ footer = "© 2025 hamflx. Generated with blog-gen."
 
 googleAnalyticsId = "G-7KW3T6P3VZ"
 
+[[site.navigation]]
+name = "AI Gateway"
+url = "https://ai.hamflx.dev"
+
+[[site.navigation]]
+name = "Products"
+url = "https://products.hamflx.dev"
+
+[[site.navigation]]
+name = "Camofy"
+url = "https://camofy.app"
+
+[[site.navigation]]
+name = "Jev Playground"
+url = "https://jev.hamflx.dev"
+
 [paths]
 # 内容目录
 content = "src/posts"
